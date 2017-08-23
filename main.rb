@@ -1,17 +1,4 @@
-# Basic Objectives:
-# - the user chooses from a list of main dishes
-# - the user chooses 2 side dish items
-# - computer repeats users order
-# - computer totals lunch items and displays total
-#
-# Bonus Objectives:
-# - the user can choose as many "add-on" items as they want before getting total
-# - the user can clear their choices and start over
-# - the user has a wallet total they start with and their choices cannot exceed what they can pay for
-# - the program is in a loop to keep asking the user to make new orders until they type 'quit' at any time
-# - main dishes and side items have descriptions with them and the user has an option to view the description /nutritional facts before they order (hint: think hashes)
-# - descriptions of food can have multiple options like nutritional facts, calories, fat content ect...(hint: think nested hashes)
-# - display to the user not only their total but the total fat content/calories / carbs / etc..
+
 monies = []
 food = []
 puts "----Lunch Lady Simulator 2017----"
@@ -129,37 +116,3 @@ end
 str_monies = monies.map(&:to_i)
 
 puts "You have ordered #{food} and the price is $#{str_monies.inject(:+)}"
-
-
-
-
-
-
-
-
-
-
-# def menu_main
-#   puts "1) #{main_1.meal} $#{main_1.price}"
-#   puts "2) #{main_2.meal} $#{main_2.price}"
-#   option = gets.to_i
-#   if option == 1
-#     puts "#{main_1.description} #{main_1.nutrition}"
-#   else option == 2
-#     puts "#{main_2.description} #{main_2.nutrition}"
-# end
-
-
-# def menu_side
-#   puts "sfs"
-# end
-#
-# def menu_add_ons
-#   puts "cheese"
-# end
-
-# menu_side
-# puts "and?"
-# menu_side
-# puts "anything to top it off?"
-# menu_add_ons
